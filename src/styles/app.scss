@@ -2,7 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h3,
+h4 {
+  font-weight: 400;
+  color: rgb(100, 100, 100);
 }
 
 h1,
@@ -13,3 +22,4 @@ h3 {
 
 @import "./song";
 @import "./play";
+@import "./library";
