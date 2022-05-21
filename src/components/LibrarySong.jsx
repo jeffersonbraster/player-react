@@ -1,8 +1,10 @@
 import React from "react";
 
-const LibrarySong = ({ song, songs, setCurrentSong, id }) => {
+const LibrarySong = ({ song, songs, setCurrentSong, id, audioRef }) => {
   const songSelectedHandler = async () => {
-    await setCurrentSong(song);
+    await setCurrentSong(songs.filter((song) => song.id === id)[0]);
+
+    audioRef.current.play();
   };
   return (
     <div onClick={songSelectedHandler} className="library-song">
