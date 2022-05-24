@@ -47,7 +47,6 @@ function App() {
       if (isPlaying) audioRef.current.play();
     }, 150);
 
-    //if (isPlaying && audioRef.current.isPaused) audioRef.current.play();
     return;
   };
 
